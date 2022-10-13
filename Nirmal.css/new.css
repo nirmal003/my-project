@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(pexels.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+
+.menu {
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    width: 150px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.fa {
+    margin-right: 6px;
+}
+
+.submenu1 {
+    display: none;
+}
+
+.menu ul li:hover .submenu1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 100, 0);
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
+.menu ul li:hover .submenu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .submenu1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.menu ul li:hover .submenu1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu ul li:hover .submenu1 ul li a:hover {
+    color: #2bff00;
+}
+
+.fa-angle-right {
+    float: right;
+    color: #fff;
+}
+
+.submenu2 {
+    display: none;
+}
+
+.nsmenu:hover .submenu2 {
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 150px;
+    background-color: rgb(0, 100, 0);
+}
+
+#goahead {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    background-color: #2bab2d;
+    padding: 13px;
+    border-radius: 4px;
+    margin: 1px;
+    width: 140px;
+    color: rgb(0, 100, 0);
+    font-size: 18px;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+q {
+    quotes: "" "\00bb";
+    text-align: center;
+    float: right;
+}
+
+#goahead,
+a:hover {
+    color: yellow;
+}
+
+.search {
+    background-color: rgb(56, 63, 56);
+}
+
+.search input {
+    padding: 8px;
+    width: 90%;
+    margin: 10px;
+}
+
+.gc1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: rgb(0, 100, 0);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.gcb a {
+    display: grid;
+    background-color: #2bab2d;
+    padding: 14px 60px;
+    border: 0px solid #2bab2d;
+    border-radius: 3px;
+}
+
+.gc2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(56, 63, 56);
+    color: #fff;
+    align-content: center;
+    padding: 8px;
+    padding-top: 16px;
+    gap: 22px;
+    grid-template-rows: 200px 200px 200px 200px;
+}
+
+#nd {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+}
+
+/* .gcb ul li {
+    display: none;
+}
+
+.gcb:hover ul li {
+    display: grid;
+    display: ruby-base-container;
+    background-color: #0d1aab;
+    width: 130px;
+    position: absolute;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    grid-template: subgrid;
+} */

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Student details</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        a,
+        button {
+            text-decoration: none;
+            color: black;
+            padding: 4px;
+            block-size: 33px;
+            width: 110px;
+            border-radius: 3px;
+        }
+
+        input[type=text],
+        [type=number],
+        [type=email] {
+            block-size: 30px;
+            width: 200px;
+            border-radius: 3px;
+        }
+
+        [type=Reset],
+        [type=submit] {
+            block-size: 35px;
+            width: 110px;
+            border-radius: 3px;
+        }
+
+        .blood,
+        td {
+            color: #fff;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: yellow;
+        }
+
+        td {
+            background-color: #2bab00;
+        }
+
+        .ac {
+            text-align: center;
+            color: #fff;
+            background-color: chocolate;
+            padding: 10px;
+            /* font-family: 'Times New Roman', Times, serif; */
+            border-radius: 3px;
+        }
+
+        .acc {
+            padding: 15px;
+            font-weight: 900;
+            text-align: center;
+            background-color: #008fab;
+            border: 1px solid black;
+            color: #fff;
+        }
+
+        input[type=file],
+        [type=Reset],
+        [type=submit] {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/action page.php">
+        <div class="ac">
+            <strong> Student Portfolio</strong>
+        </div>
+
+        <ol>
+
+            <li><input type="text" placeholder="Enter Your Name *" required size="4"></li>
+            <br>
+            <li><input type="text" placeholder="Enter Father Name *" required></li>
+            <br>
+            <li><input type="text" placeholder="Enter Mother Name*" required></li>
+            <br>
+            <li><input type="number" placeholder="Enter Cantact Number*" required></li>
+            <br>
+            <li><input type="email" placeholder="Enter Email*" required></li>
+            <br>
+            <li>Date of Birth <input type="date"></li>
+            <br>
+            <li>Gender*
+                <select name="Gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </li>
+            <br>
+
+            <li>Gender
+                <label>
+                    <input type="radio" value="male" name="Gender">Male
+                </label>
+                <label>
+                    <input type="radio" value="female" name="Gender">Female
+                </label>
+                <br>
+                <br>
+            </li>
+            <li>Which is your favorite Game ?
+                <br>
+                <br>
+                <label>
+                    <input type="checkbox" value="carrom" name="Game">Carrom
+                </label>
+                <label>
+                    <input type="checkbox" value="chess" name="Game">Chess
+                </label>
+                <label>
+                    <input type="checkbox" value="tennis" name="Game">Tennis
+                </label>
+
+                <br>
+                <br>
+            </li>
+
+            <br>
+            <li>
+                <table>
+                    <thead>
+                        <caption class="acc">
+                            Student Info
+                        </caption>
+                        <tr>
+                            <th>Std Name</th>
+                            <th>Blood Group</th>
+                            <th>Qualification</th>
+                            <th>Resume</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nirmal</td>
+                            <td class="blood">A+ve</td>
+                            <td>BE.Mechanical engineering</td>
+                            <td><input type="file" id="file Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Mahesh</td>
+                            <td class="blood">A1+ve</td>
+                            <td>BE.Computer science engineering</td>
+                            <td><input type="file" id="file Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Arun</td>
+                            <td class="blood">AB-ve</td>
+                            <td>BE.Mechanical engineering</td>
+                            <td><input type="file" id="file Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Sakthi</td>
+                            <td class="blood">A+ve</td>
+                            <td>BE.Mechanical engineering</td>
+                            <td><input type="file" id="file Name" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <br>
+            <!-- <br>
+            <li><input type="file" id="file Name"></li>
+            <br> -->
+            <br>
+            <li>Feedback</li>
+            <textarea name="feedback" placeholder="please give your valuable feeddback" cols="28" rows="5">
+        </textarea>
+            <br>
+            <br>
+            <li>
+                <button><a href="test.html" target="-bkank">Go On</a></button>
+            </li>
+            <br>
+            <br>
+            <li> <input type="reset" value="Reset"></li>
+            <Br>
+            <Br>
+            <li> <input type="submit" value="Submit"></li>
+        </ol>
+    </form>
+</body>
+
+</html>
