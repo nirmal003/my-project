@@ -1,0 +1,67 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     background: #D3CCE3;
+     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+     background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+     font-family: 'Times New Roman', Times, serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     margin: 0;
+ }
+
+ .container {
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 0 0 10px 10px rgba(100, 100, 100, 0.1);
+     width: 500px;
+     max-width: 100%;
+     overflow: hidden;
+ }
+
+ .con2 {
+     padding: 3rem;
+ }
+
+ h2 {
+     margin: 0;
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ ul li {
+     font-size: 1.2rem;
+     margin: 1.3rem 0;
+ }
+
+ ul li input {
+     cursor: pointer;
+ }
+
+ ul li label {
+     cursor: pointer;
+ }
+
+ button {
+     display: block;
+     width: 100%;
+     background-color: rgb(153, 92, 211);
+     padding: 2rem;
+     color: #fff;
+     font-family: inherit;
+     font-size: 1.1rem;
+     border: none;
+     padding: 1.3rem;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background-color: rgb(151, 35, 147);
+ }
