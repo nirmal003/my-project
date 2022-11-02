@@ -1,135 +1,134 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: rgba(235, 231, 231, 0.8);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: sans-serif;
+  background-color: rgba(235, 231, 231, 0.8);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .mob-container {
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-    width: 340px;
-    border-radius: 3px;
-    box-shadow: 0 0 5px gray;
-    overflow: hidden;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px gray;
+  overflow: hidden;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .header input {
-    margin: 5px;
-    padding: 8px;
-    border: none;
-    background-color: #eee;
-    border-radius: 3px;
-    font-family: inherit;
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: inherit;
 }
 
 .header button {
-    padding: 8px;
-    border: none;
-    font-size: 1.5rem;
-    color: #aaa;
-    background-color: #fff;
+  padding: 8px;
+  border: none;
+  font-size: 1.5rem;
+  color: #aaa;
+  background-color: #fff;
 }
 
 .fav-meals {
-    background-color: rgba(144, 195, 240, 0.53);
-    padding: 8px 0;
-    text-align: center;
-    margin: 20px 1px;
-    margin-top: 0;
-    border-radius: 3px;
+  background-color: rgba(144, 195, 240, 0.53);
+  padding: 8px 0;
+  text-align: center;
+  margin: 20px 1px;
+  margin-top: 0;
+  border-radius: 3px;
 }
 
 .fav-meals ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
 }
 
 .fav-meals li span {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .fav-meals ul li {
-    width: 90px;
-    margin: 8px 10px;
+  width: 90px;
+  margin: 8px 10px;
 }
 
 .fav-meals img {
-    object-fit: cover;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
+  object-fit: cover;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
 
 .meals {
-    margin: 5px 1.5rem;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    box-shadow: 0 2px 5px gray;
-
+  margin: 5px 1.5rem;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px gray;
 }
 
 .meals-head {
-    position: relative;
+  position: relative;
 }
 
 .meals-head img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 .recipe {
-    position: absolute;
-    top: 1rem;
-    padding: 6px 1rem;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: #fff;
+  position: absolute;
+  top: 1rem;
+  padding: 6px 1rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #fff;
 }
 
 .meals-body {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .meals-body .fav-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: rgba(128, 128, 128, 0.708);
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.708);
 }
 
 .meals-body h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .meals-body .fav-btn.active {
-    color: rgb(232, 6, 248);
+  color: rgb(232, 6, 248);
 }
