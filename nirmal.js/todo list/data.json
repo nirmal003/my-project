@@ -1,0 +1,25 @@
+{
+    "employess":[
+        {
+            "name":"sagar",
+            "edu":"bca",
+            "work":"trainee",
+            "sal":2000,
+            "exp":null
+        },
+        {
+            "name":"anil",
+            "edu":"be",
+            "work":"trainee", 
+            "sal":2000,
+            "exp":null
+        },
+        {
+            "name":"vivek",
+            "edu":"be",
+            "work":"senior",
+            "sal":20000,
+            "exp":10
+        }
+    ]
+}

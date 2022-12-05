@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localstorage</title>
+  </head>
+  <body>
+    <h1>Localstorage</h1>
+    <script>
+      const person = {
+        name: "Nirmal",
+        age: 26,
+        Qualification: "Engineering",
+        Blood_group: "A +ve",
+      };
+
+      const person2 = {
+        name: "Mahesh",
+        age: 21,
+        Qualification: "Engineering",
+        Blood_group: "A -ve",
+      };
+
+      const person3 = {
+        name: "Arun",
+        age: 25,
+        Qualification: "Engineering",
+        Blood_group: "AB -ve",
+      };
+
+      //        store the object in the localStorage
+
+      localStorage.setItem("user", JSON.stringify(person));
+
+      localStorage.setItem("user2", JSON.stringify(person2));
+
+      localStorage.setItem("user3", JSON.stringify(person3));
+
+      //       fetch the data from the localStorage
+
+      JSON.parse(localStorage.getItem("user"));
+
+      JSON.parse(localStorage.getItem("user2"));
+
+      JSON.parse(localStorage.getItem("user3"));
+
+      //       remove data from localStorage
+
+      localStorage.removeItem("user3");
+    </script>
+  </body>
+</html>

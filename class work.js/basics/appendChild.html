@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript appendChild() Method</title>
+  </head>
+
+  <body>
+    <h1>JavaScript</h1>
+
+    <h2>JavaScript appendChild() Method</h2>
+
+    <div id="menu"></div>
+
+    <button onclick="append()">Append</button>
+
+    <div id="div2"></div>
+
+    <div id="div3">
+      <p id="p1">hi........<button onclick="remove()">remove</button></p>
+
+      <p id="p2">gd mrng.........<button onclick="remove2()">remove</button></p>
+
+      <p id="p3">
+        Nothing......what about you......<button onclick="replace()">
+          replace
+        </button>
+      </p>
+    </div>
+
+    <button onclick="display()">div2-append-btn</button>
+
+    <script>
+      //           appendchid method(1st) it will give again and again
+
+      const div = document.getElementById("menu");
+
+      var ul = document.createElement("ul");
+
+      function append() {
+        var lang = ["C#", "Java", "Python"];
+
+        for (let i = 0; i < lang.length; i++) {
+          var li = document.createElement("li");
+
+          li.innerHTML = lang[i];
+
+          ul.appendChild(li);
+
+          li.style.listStyle = "none";
+        }
+        div.appendChild(ul);
+      }
+
+      //     appendchild--------(2nd method)
+
+      const div2 = document.getElementById("div2");
+
+      const para1 = document.createElement("p");
+
+      const node1 = document.createTextNode("hi Nirmal......whatsup?");
+
+      para1.appendChild(node1);
+
+      function display() {
+        div2.appendChild(para1);
+      }
+
+      //    appendchild---------(3rd method)
+
+      const p = document.createElement("h2");
+
+      const node = document.createTextNode(
+        "Without creating parent tag in the body"
+      );
+
+      p.appendChild(node);
+
+      document.body.appendChild(p); // but it will goes to lastchild of the body
+
+      //      removechild-----(1st method)
+
+      const p1 = document.getElementById("p1");
+
+      function remove() {
+        p1.remove();
+      }
+
+      //       removechild-----(2nd method)
+
+      const div3 = document.getElementById("div3");
+
+      const p2 = document.getElementById("p2");
+
+      function remove2() {
+        div3.removeChild(p2);
+      }
+
+      //        replacechild
+
+      const rep = document.getElementById("div3");
+
+      const p3 = document.getElementById("p3");
+
+      const para3 = document.createElement("p");
+
+      const node3 = document.createTextNode("Yes Im good.....what about you");
+
+      para3.appendChild(node3);
+
+      para3.style.backgroundColor = "#edc";
+
+      function replace() {
+        //    we an manage time also means delay
+        setTimeout(() => {
+          {
+            rep.replaceChild(para3, p3);
+          }
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

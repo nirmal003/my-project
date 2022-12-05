@@ -1,0 +1,60 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "fullName": "person1",
+      "address": "1st cross",
+      "phoneNumber": "765423457",
+      "email": "person1@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullName": "person2",
+      "address": "2nd cross",
+      "phoneNumber": "834567656",
+      "email": "person2@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullName": "person3",
+      "address": "3rd cross",
+      "phoneNumber": "876542345",
+      "email": "person3@gmail.com"
+    },
+    {
+      "id": 4,
+      "fullName": "person4",
+      "address": "4th cross",
+      "phoneNumber": "876523234",
+      "email": "person4@gmail.com"
+    },
+    {
+      "id": 5,
+      "fullName": "person5",
+      "address": "5th cross",
+      "phoneNumber": "765423456",
+      "email": "person5@gmail.com"
+    },
+    {
+      "id": 6,
+      "fullName": "person6",
+      "address": "6th cross",
+      "phoneNumber": "789987653",
+      "email": "person6@gmail.com"
+    },
+    {
+      "id": 7,
+      "fullName": "person7",
+      "address": "7th cross",
+      "phoneNumber": "987234013",
+      "email": "person7@gmail.com"
+    },
+    {
+      "id": 8,
+      "fullName": "person8",
+      "address": "8th cross",
+      "phoneNumber": "987652341",
+      "email": "person8@gmail.com"
+    }
+  ]
+}

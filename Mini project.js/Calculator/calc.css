@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #267dc0f7;
+  font-family: sans-serif;
+}
+
+.calculator {
+  background-color: rgba(253, 251, 251, 0.588);
+  padding: 1rem;
+  width: 340px;
+  box-shadow: 0 0 8px #000;
+  border-radius: 5px;
+  display: relative;
+}
+.container {
+  /* display: grid; */
+  /* grid-gap: 8px; */
+  grid-template-columns: repeat(4, 70px);
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator1 {
+  /* background-color: rgba(253, 251, 251, 0.588); */
+  /* padding: 1.3rem 10px; */
+  /* width: 330px; */
+  /* box-shadow: 0 0 8px #000; */
+  /* border-radius: 5px; */
+  display: relative;
+}
+.container1 {
+  display: grid;
+  /* grid-gap: 8px; */
+  grid-template-columns: repeat(4, 75px);
+  align-items: center;
+  justify-content: center;
+}
+.calculator2 {
+  /* background-color: rgba(253, 251, 251, 0.588); */
+  /* padding: 1.3rem 10px; */
+  /* width: 330px; */
+  /* box-shadow: 0 0 8px #000; */
+  /* border-radius: 5px; */
+  display: relative;
+}
+.container2 {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(4, 70px);
+  align-items: center;
+  justify-content: center;
+}
+
+#output {
+  display: grid;
+  grid-column: span 4;
+  padding: 14px;
+  margin: 1.3rem 0 0;
+  font-size: 2.5rem;
+  grid-gap: 0;
+  text-align: end;
+  color: rgb(2, 203, 2);
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+#answer {
+  grid-column: span 4;
+  padding: 14px;
+  margin: 0 0 2rem;
+  font-size: 1.8rem;
+  text-align: end;
+  color: rgb(2, 203, 2);
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+button {
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(66, 65, 65);
+  color: #fff;
+  border: none;
+}
+
+button:active {
+  background-color: rgb(128, 124, 124);
+}
+
+.green {
+  color: rgb(50, 250, 5);
+}
+
+.green1 {
+  color: rgb(50, 250, 5);
+}
+.equal {
+  background-color: rgb(0, 177, 0);
+  color: white;
+}
+
+.equal:active {
+  background-color: rgb(70, 248, 70);
+}

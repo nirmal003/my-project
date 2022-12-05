@@ -1,0 +1,13 @@
+.image-watchlist {
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+}
+.poster1 {
+  width: 200px;
+  background-color: #0a164a;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}

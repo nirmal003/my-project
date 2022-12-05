@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Example of the addEventListener() method.</p>
+
+    <p>Click the following button to see the effect.</p>
+
+    <button id="btn">Click me</button>
+
+    <p id="para"></p>
+
+    <button id="button1">Click me</button>
+
+    <p id="para1"></p>
+
+    <button id="button2">Click me</button>
+
+    <p id="para2"></p>
+
+    <p id="remove">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque
+      nam ab ad illum at rerum ratione corporis, ducimus iste.
+    </p>
+
+    <button id="button3">Click me</button>
+
+    <script>
+      //                1st method
+
+      document.getElementById("btn").addEventListener("click", () => {
+        document.getElementById("para").innerHTML =
+          "Hello World" + "<br>" + "Welcome to the  javascript";
+      });
+
+      //                   2nd method
+
+      const button1 = document.getElementById("button1");
+
+      const para1 = document.getElementById("para1");
+
+      button1.addEventListener("click", fun);
+
+      function fun() {
+        para1.innerHTML = "hi nirmal.....whatsup";
+      }
+
+      //                  3rd method
+
+      const button2 = document.getElementById("button2");
+
+      const para2 = document.getElementById("para2");
+
+      button2.addEventListener("click", () => {
+        para2.innerText = "hi mahesh.....whatsup"; //    innerHTML and innerText both also same
+      });
+
+      //     removeEventListener method
+
+      // const button3 = document.getElementById("button3");
+
+      // const para3 = document.getElementById("remove");
+
+      // button3.removeEventListener("click", () => {
+      //   para3.innerHTML = " ";
+      // });
+    </script>
+  </body>
+</html>
