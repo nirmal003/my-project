@@ -36,7 +36,7 @@ const f = a.concat(); //          can use some array in diff variables
 
 console.log(f);
 
-a.push(4); // pushing only in "a"
+a.push(4); //                      pushing only in "a"
 
 console.log(a);
 

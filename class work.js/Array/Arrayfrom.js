@@ -4,11 +4,13 @@ const str = "1234567";
 
 const str_arr = Array.from(str); //         str into  array of string for each char
 
+console.log([...str]); //       both also same resluts
+
 console.log(str_arr);
 
 //                      we need to change str into array of number and it have 3 ways to do this
 
-//   let's go to try this
+//                     let's go to try this
 
 const num_arr = Array.from(str, mapFn); //                         this 1st one
 
@@ -39,3 +41,7 @@ const frt = ["ball", "apple", "apple", "orange", "ball", "car", "wheel", "car"];
 const fruits = Array.from(new Set(frt));
 
 console.log(fruits);
+
+const fruit = [...new Set(frt)]; // 2nd way to do without Array.from
+
+console.log(fruit);

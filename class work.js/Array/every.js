@@ -35,7 +35,7 @@ const check = poeple.every((item) => item.name !== undefined);
 
 console.log(check);
 
-// check inside the array is array or string
+//        check inside the array is array or string
 
 const array = [
   [1, 2, 3],

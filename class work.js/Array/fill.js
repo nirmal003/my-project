@@ -21,3 +21,9 @@ function fillnums(n) {
 }
 
 console.log(fillnums(10));
+
+//     2nd way to do this
+
+const ary = new Array(10).fill().map((_, idx) => idx + 1);
+
+console.log(ary);

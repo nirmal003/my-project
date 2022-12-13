@@ -16,6 +16,8 @@ const max = nums.reduce((acc, value) => {
   } else {
     return value;
   }
+
+  // acc > value ? `${acc}` : `${value}`;
 });
 
 console.log(max);
@@ -55,3 +57,14 @@ const productvalue = product.reduce(
   0
 );
 console.log(productvalue);
+
+const productPriceCategory = product.reduce((acc, value) => {
+  if (acc[value.price]) {
+    acc[value.price] = ++acc[value.price];
+  } else {
+    acc[value.price] = 1;
+  }
+  return acc;
+}, {});
+
+console.log(productPriceCategory);

@@ -22,8 +22,8 @@ const person2 = {
 
 const displayp1 = person.fullName.bind(person1, "bengalore", "india");
 
-const displayp2 = person.fullName.bind(person1, "bengalore", "india");
+const displayp2 = person.fullName.bind(person1);
 
 console.log(displayp1());
 
-console.log(displayp2());
+console.log(displayp2("bengalore", "india"));
