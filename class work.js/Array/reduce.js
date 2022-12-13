@@ -73,6 +73,6 @@ console.log(productPriceCategory);
 
 // console.log("im here", __filename);
 
-const fs = require("fs").writefilesync("aaa.txt");
+// const fs = require("fs").writefilesync("aaa.txt");
 
-console.log(fs);
+// console.log(fs);
