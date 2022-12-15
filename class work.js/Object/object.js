@@ -30,31 +30,6 @@ const obj = { ...arr };
 
 console.log(obj);
 
-const promise = new Promise((res) => res(2));
-
-console.log(promise);
-
-promise
-  .then((v) => {
-    console.log(v);
-    return v * 2;
-  })
-  .then((v) => {
-    console.log(v);
-    return v * 2;
-  })
-  .finally((v) => {
-    console.log(v);
-    return 0;
-  })
-  .then((v) => {
-    console.log(v);
-    return 1;
-  })
-  .then((v) => {
-    console.log(v);
-  });
-
 const array = [6, 7, 8];
 
 for (let i in array) {

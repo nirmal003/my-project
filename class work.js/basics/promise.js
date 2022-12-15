@@ -1,7 +1,7 @@
 //   we will show the message to user this promise resolved or rejected
 
 const myPromise = new Promise((resolve, reject) => {
-  let condition = 9;
+  let condition = 10;
 
   if (condition < 0) {
     resolve(
@@ -18,4 +18,29 @@ myPromise
   })
   .catch((message) => {
     console.log(message); //       display message if rejected
+  });
+
+const promise = new Promise((res) => res(2));
+
+console.log(promise);
+
+promise
+  .then((v) => {
+    console.log(v);
+    return v * 2;
+  })
+  .then((v) => {
+    console.log(v);
+    return v * 2;
+  })
+  .finally((v) => {
+    console.log(v);
+    return 0;
+  })
+  .then((v) => {
+    console.log(v);
+    return 1;
+  })
+  .then((v) => {
+    console.log(v);
   });
