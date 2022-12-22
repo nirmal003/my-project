@@ -1,18 +1,19 @@
 import "./App.css";
 
-import ParentFunc from "./Functions/ParentFunc";
-import InputForm from "./Hooks/UseCustom/InputForm";
+// import ParentFunc from "./Functions/ParentFunc";
+// import InputForm from "./Hooks/UseCustom/InputForm";
+import Timer from "./Hooks/UseRef/Timer";
 
 function App() {
   return (
     <div className="App">
-      <InputForm />
+      {/* <InputForm /> */}
       {/* <CustomTwo /> */}
       {/* <CustomOne /> */}
       {/* <TitleTwo /> */}
       {/* <TitleOne /> */}
 
-      {/* <Timer /> */}
+      <Timer />
       {/* <FocusInput /> */}
 
       {/* <Count /> */}
@@ -41,7 +42,7 @@ function App() {
       {/* <ObjectUseState /> */}
       {/* <HooksCounter /> */}
 
-      <ParentFunc />
+      {/* <ParentFunc /> */}
       {/* <Hello /> */}
       {/* <Objectmap /> */}
       {/* <Arraymap /> */}

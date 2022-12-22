@@ -1,6 +1,10 @@
 const redux = require("redux");
+const { default: logger } = require("redux-logger");
+const { default: thunk } = require("redux-thunk");
+
 const createStore = redux.createStore;
 const combineReducers = redux.combineReducers;
+const applymiddleware = redux.applyMiddleware;
 
 const BUY_SWEET = "Buy_Sweet";
 const BUY_CAKE = "Buy_Cake";
@@ -116,12 +120,13 @@ const rootReducer = combineReducers({
   Coffee: reduceCoffee,
 });
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applymiddleware(thunk, logger));
 
 console.log("Initial State", store.getState());
 
-const unSubscribe = store.subscribe(() =>
-  console.log("Updated State", store.getState())
+const unSubscribe = store.subscribe(
+  () => {}
+  // console.log("Updated State", store.getState())
 );
 
 store.dispatch(buySweet(5));

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Timer() {
   const [Timer, setTimer] = useState(0);
@@ -7,7 +7,9 @@ function Timer() {
   //      we can stop the interval by using useRef
 
   useEffect(() => {
+    console.log("hi");
     intervalRef.current = setInterval(() => {
+      console.log("hello");
       setTimer((prevTimer) => prevTimer + 1);
     }, 1000);
 

@@ -18,7 +18,13 @@ myPromise
   })
   .catch((message) => {
     console.log(message); //       display message if rejected
+  })
+  .finally(() => {
+    console.log("promise was completed");
   });
+// .finally(() => {
+//   console.log("promise was completed");
+// });
 
 const promise = new Promise((res) => res(2));
 
